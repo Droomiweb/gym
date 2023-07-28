@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="scripts/skdcarousel.css" rel="stylesheet" media="screen">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Power House</title>
+</head>
+<body>
+    <!-- -----------------------------header-------------------------------------- -->
+    <header id="header">
+        <h2>Power House</h2>
+        <nav>
+            <ul>
+                <li><a class="active" href="#" >HOME</a></li>
+                <li><a href="about/index.html">ABOUT</a></li>
+                <li><a href="contact/index.html">CONTACT</a></li>
+            </ul>
+
+        </nav>
+         <nav class="mob-nav">
+                <i onclick="menu()" class="fa-solid fa-bars" style="color: #ffffff;"></i>
+
+        </nav>
+    </header>
+
+    <div class="mob-menu" id="mobmenu">
+       
+            <i id="close" class="fa-solid fa-x"></i>
+        <ul> 
+            <li><a class="act-mob" href="#">HOME</a></li>
+            <li><a href="about/index.html">ABOUT</a></li>
+            <li><a href="contact/index.html">CONTACT</a></li>
+        </ul>
+    </div>
+
+    <section class="welcome">
+        <h1>welcome to power house</h1>
+        <h3>a house that your body needs</h3>
+    </section>
+<!-- -----------------------------what we do-------------------------------------- -->
+    <div class="img-place">
+        <h1 >what we do</h1>
+        <section>
+            <div class="box">
+               <div class="container">
+                    <div class="imgBx jarallax">
+                        <img src="images/gym1.jpg" class="jarallax-img">
+                    </div>
+                    <div class="content"data-jarallax-element="100 0">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis, iure? Error sapiente nulla quas accusantium sit ratione culpa nihil voluptatibus, tenetur doloremque pariatur laborum aperiam, numquam illo laudantium, recusandae laboriosam!</p>
+    
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section>
+            <div class="box">
+               <div class="container">
+                    <div class="imgBx jarallax">
+                        <img src="images/gym2.jpg" class="jarallax-img">
+                    </div>
+                    <div class="content"data-jarallax-element="100 0">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis, iure? Error sapiente nulla quas accusantium sit ratione culpa nihil voluptatibus, tenetur doloremque pariatur laborum aperiam, numquam illo laudantium, recusandae laboriosam!</p>
+    
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section>
+            <div class="box">
+               <div class="container">
+                    <div class="imgBx jarallax">
+                        <img src="images/gym3.jpg" class="jarallax-img">
+                    </div>
+                    <div class="content"data-jarallax-element="100 0">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis, iure? Error sapiente nulla quas accusantium sit ratione culpa nihil voluptatibus, tenetur doloremque pariatur laborum aperiam, numquam illo laudantium, recusandae laboriosam!</p>
+    
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section>
+            <div class="box">
+               <div class="container">
+                    <div class="imgBx jarallax">
+                        <img src="images/gym4.jpg" class="jarallax-img">
+                    </div>
+                    <div class="content"data-jarallax-element="100 0">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis, iure? Error sapiente nulla quas accusantium sit ratione culpa nihil voluptatibus, tenetur doloremque pariatur laborum aperiam, numquam illo laudantium, recusandae laboriosam!</p>
+    
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+    <!-- -----------------------------our spacilities-------------------------------------- -->
+    <section class="spl" id="spl">
+        <h1>our specialities</h1>
+        <div class="img-BX">
+            <div>
+                <img src="images/equp.jpg" alt="">
+                <h3>equipments</h3>
+            </div>
+            <div>
+                <img src="images/trainer.jpg" alt="">
+                <h3>trainer</h3>
+            </div>
+        </div>
+    </section>
+    <!-- -----------------------------clients-------------------------------------- -->
+<section class="clients">
+    <h1>our clients</h1>
+    <div class="gallery">
+        <div class="gallery-container skd-carousel" id="demo1">
+            <img src="images/client2.jpg" class="gallery-item">
+            <img src="images/client1.jpg" class="gallery-item">
+            <img src="images/client3.jpg" class="gallery-item">
+            <img src="images/gym1.jpg" class="gallery-item">
+            <img src="images/gym2.jpg" class="gallery-item">
+        </div>
+    </div>
+</section>
+    <!-- -----------------------------footer-------------------------------------- -->
+<footer>
+    <h1>about us</h1>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sunt adipisci et nostrum repellat mollitia quibusdam repellendus<br> dolore, aspernatur, laborum delectus voluptates voluptatum animi cum, consequatur quod quo pariatur provident voluptas?</p>
+    <div class="icons">
+        <i class="fa-brands fa-facebook"></i>
+        <i class="fa-brands fa-twitter"></i>
+        <i class="fa-brands fa-instagram"></i>
+        <i class="fa-brands fa-linkedin"></i>
+    </div>
+</footer>
+    <!-- -----------------------------scripts-------------------------------------- -->
+    <script src="scripts/jarallax-element.js"></script>
+    <script src="scripts/jarallax.js"></script>
+    <script src="scripts/jarallax-element.min.js.map"></script>
+    <script>
+        jarallax(document.querySelectorAll('.jarallax'), {
+            speed: 0.5,
+        });
+    </script>
+        <script src="scripts/skdcarousel.js"></script>
+        <script src="scripts/skdcarousel.min.js"></script>
+        <script type="text/javascript">
+            new SKDCarousel({selector:'demo1'}).onCenter(function(number){
+               var descs = document.querySelectorAll('h1.desc'); 
+               for(var i=0;i<descs.length;i++) {
+                 descs[i].style.display='none'; 
+               } 
+               document.getElementById('slide'+number).style.display = 'block';
+            });
+            
+        
+          </script>
+    <script src="https://cdn.jsdelivr.net/npm/trig-js/src/trig.min.js"></script>
+
+    <script>
+      window.onload =  document.addEventListener('scroll',function(){
+            var scroll = window.scrollY
+            var amt = (scroll*0.01)/2
+            if(scroll >=0){
+                document.getElementById('header').style.backgroundColor = 'rgba(255, 38, 38, '+amt+')'
+            }
+        })
+         function menu(){
+            document.getElementById('mobmenu').style.transform = 'translateX(0px)'
+        }
+        document.getElementById('close').onclick = function(){
+            document.getElementById('mobmenu').style.transform = 'translateX(270px)'
+
+        }
+    </script>
+</body>
+
+</html>

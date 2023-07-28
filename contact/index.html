@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="scripts/skdcarousel.css" rel="stylesheet" media="screen">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Power House</title>
+</head>
+<body>
+    <!-- -----------------------------header-------------------------------------- -->
+    <header id="header">
+        <h2>Power House</h2>
+        <nav>
+            <ul>
+                <li><a  href="../index.html" >HOME</a></li>
+                <li><a href="../about/index.html">ABOUT</a></li>
+                <li><a class="active" href="../contact/index.html">CONTACT</a></li>
+            </ul>
+
+        </nav>
+         <nav class="mob-nav">
+                <i onclick="menu()" class="fa-solid fa-bars" style="color: #ffffff;"></i>
+
+        </nav>
+    </header>
+
+    <div class="mob-menu" id="mobmenu">
+       
+            <i id="close" class="fa-solid fa-x"></i>
+            <ul> 
+                <li><a href="../index.html">HOME</a></li>
+                <li><a href="../about/index.html">ABOUT</a></li>
+                <li><a class="act-mob" href="../contact/index.html">CONTACT</a></li>
+            </ul>
+    </div>
+
+    <section class="welcome">
+        <h1>contact us</h1>
+    </section>
+<!-- -----------------------------map-------------------------------------- -->
+<section class="map">
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d31230164.505767267!2d-147.53271044333616!3d17.156782985847514!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x84043a3b88685353%3A0xed64b4be6b099811!2sMexico!5e0!3m2!1sen!2sin!4v1689511786159!5m2!1sen!2sin"  style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+</section>   
+<!-- -----------------------------contact-------------------------------------- -->
+<section class="contact">
+    <div class="detail">
+        <i class="fa-solid fa-house"></i>
+        <div>
+            <h1>power building</h1>
+            <p>mexico , america , 00543</p>
+        </div>
+    </div>
+    <div class="detail">
+        <i class="fa-solid fa-phone"></i>
+        <div>
+            <h1>+91-8978675656</h1>
+            <p>mon - sat 7:00 Am - 7:00 pm</p>
+        </div>
+    </div>
+    <div class="detail">
+        <i class="fa-regular fa-envelope"></i>
+        <div>
+            <h1>blabkabka@gmail.com</h1>
+            <p>mail your quores</p>
+        </div>
+    </div>
+</section>
+ <!-- -----------------------------footer-------------------------------------- -->
+    <footer>
+        <h1>about us</h1>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sunt adipisci et nostrum repellat mollitia quibusdam repellendus<br> dolore, aspernatur, laborum delectus voluptates voluptatum animi cum, consequatur quod quo pariatur provident voluptas?</p>
+        <div class="icons">
+            <i class="fa-brands fa-facebook"></i>
+            <i class="fa-brands fa-twitter"></i>
+            <i class="fa-brands fa-instagram"></i>
+            <i class="fa-brands fa-linkedin"></i>
+        </div>
+    </footer>
+    <!-- -----------------------------scripts-------------------------------------- -->
+    <script src="scripts/jarallax-element.js"></script>
+    <script src="scripts/jarallax.js"></script>
+    <script src="scripts/jarallax-element.min.js.map"></script>
+    <script>
+        jarallax(document.querySelectorAll('.jarallax'), {
+            speed: 0.5,
+        });
+    </script>
+        <script src="scripts/skdcarousel.js"></script>
+        <script src="scripts/skdcarousel.min.js"></script>
+        <script type="text/javascript">
+            new SKDCarousel({selector:'demo1'}).onCenter(function(number){
+               var descs = document.querySelectorAll('h1.desc'); 
+               for(var i=0;i<descs.length;i++) {
+                 descs[i].style.display='none'; 
+               } 
+               document.getElementById('slide'+number).style.display = 'block';
+            });
+            
+        
+          </script>
+    <script src="https://cdn.jsdelivr.net/npm/trig-js/src/trig.min.js"></script>
+
+    <script>
+      window.onload =  document.addEventListener('scroll',function(){
+            var scroll = window.scrollY
+            var amt = (scroll*0.01)/2
+            if(scroll >=0){
+                document.getElementById('header').style.backgroundColor = 'rgba(255, 38, 38, '+amt+')'
+            }
+        })
+         function menu(){
+            document.getElementById('mobmenu').style.transform = 'translateX(0px)'
+        }
+        document.getElementById('close').onclick = function(){
+            document.getElementById('mobmenu').style.transform = 'translateX(270px)'
+
+        }
+    </script>
+</body>
+
+</html>

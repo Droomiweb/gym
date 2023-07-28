@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="scripts/skdcarousel.css" rel="stylesheet" media="screen">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Power House</title>
+</head>
+<body>
+    <!-- -----------------------------header-------------------------------------- -->
+    <header id="header">
+        <h2>Power House</h2>
+        <nav>
+            <ul>
+                <li><a  href="../index.html" >HOME</a></li>
+                <li><a class="active" href="#">ABOUT</a></li>
+                <li><a href="../contact/index.html">CONTACT</a></li>
+            </ul>
+
+        </nav>
+         <nav class="mob-nav">
+                <i onclick="menu()" class="fa-solid fa-bars" style="color: #ffffff;"></i>
+
+        </nav>
+    </header>
+
+    <div class="mob-menu" id="mobmenu">
+       
+            <i id="close" class="fa-solid fa-x"></i>
+            <ul> 
+                <li><a href="../index.html">HOME</a></li>
+                <li><a class="act-mob" href="#">ABOUT</a></li>
+                <li><a href="../contact/index.html">CONTACT</a></li>
+            </ul>
+    </div>
+
+    <section class="welcome">
+        <h1>about us</h1>
+    </section>
+<!-- -----------------------------about us-------------------------------------- -->
+    <section class="abt">
+        <div class="equp">
+            <img src="../images/equp.jpg" alt="">
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Praesentium quia nesciunt neque a. Nemo distinctio,
+                repellendus ipsum deleniti fuga unde est illum quaerat porro voluptates temporibus esse fugiat quo labore.
+            </p>
+        </div>
+        <div class="train">
+            <img src="../images/trainer.jpg" alt="">
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Praesentium quia nesciunt neque a. Nemo distinctio,
+                repellendus ipsum deleniti fuga unde est illum quaerat porro voluptates temporibus esse fugiat quo labore.
+            </p>
+        </div>
+    </section>
+    <!-- -----------------------------footer-------------------------------------- -->
+    <footer>
+        <h1>about us</h1>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sunt adipisci et nostrum repellat mollitia quibusdam repellendus<br> dolore, aspernatur, laborum delectus voluptates voluptatum animi cum, consequatur quod quo pariatur provident voluptas?</p>
+        <div class="icons">
+            <i class="fa-brands fa-facebook"></i>
+            <i class="fa-brands fa-twitter"></i>
+            <i class="fa-brands fa-instagram"></i>
+            <i class="fa-brands fa-linkedin"></i>
+        </div>
+    </footer>
+    <!-- -----------------------------scripts-------------------------------------- -->
+    <script src="scripts/jarallax-element.js"></script>
+    <script src="scripts/jarallax.js"></script>
+    <script src="scripts/jarallax-element.min.js.map"></script>
+    <script>
+        jarallax(document.querySelectorAll('.jarallax'), {
+            speed: 0.5,
+        });
+    </script>
+        <script src="scripts/skdcarousel.js"></script>
+        <script src="scripts/skdcarousel.min.js"></script>
+        <script type="text/javascript">
+            new SKDCarousel({selector:'demo1'}).onCenter(function(number){
+               var descs = document.querySelectorAll('h1.desc'); 
+               for(var i=0;i<descs.length;i++) {
+                 descs[i].style.display='none'; 
+               } 
+               document.getElementById('slide'+number).style.display = 'block';
+            });
+            
+        
+          </script>
+    <script src="https://cdn.jsdelivr.net/npm/trig-js/src/trig.min.js"></script>
+
+    <script>
+      window.onload =  document.addEventListener('scroll',function(){
+            var scroll = window.scrollY
+            var amt = (scroll*0.01)/2
+            if(scroll >=0){
+                document.getElementById('header').style.backgroundColor = 'rgba(255, 38, 38, '+amt+')'
+            }
+        })
+         function menu(){
+            document.getElementById('mobmenu').style.transform = 'translateX(0px)'
+        }
+        document.getElementById('close').onclick = function(){
+            document.getElementById('mobmenu').style.transform = 'translateX(270px)'
+
+        }
+    </script>
+</body>
+
+</html>
